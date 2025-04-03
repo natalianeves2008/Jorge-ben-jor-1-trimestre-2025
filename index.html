@@ -1,19 +1,85 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<!DOCTYPE html><html lang="pt-br"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo sobre MPB</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <img src="jorgebenjor.png" alt="avatar" srcset="">
-    <p> Eu sou Natalia </p>
-    <h1> MPB </h1>
-    <div> 
-        <p> HTML </p>
-        <p>CSS</p>
-        <p>JavaSript</p>
-    </div>
-</body>
-</html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MPB - Música Popular Brasileira</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head><body>
+    <header class="p-5 bg-primary text-white text-center">
+        <h1>MPB - A Música Popular Brasileira</h1>
+        <nav class="container d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#artistas">Artistas</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header><main class="container my-5">
+    <section id="inicio" class="text-center my-5">
+        <h2>Bem-vindo à MPB</h2>
+        <p>Explore a riqueza da Música Popular Brasileira e conheça seus principais artistas.</p>
+        <img src="img/mpb-banner.jpg" class="img-fluid rounded" alt="Imagem representando a MPB">
+    </section>
+
+    <section id="artistas" class="my-5">
+        <h2 class="text-center">Grandes Artistas</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/caetano.jpg" class="img-fluid rounded-circle" alt="Caetano Veloso">
+                <h3>Caetano Veloso</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/gilberto.jpg" class="img-fluid rounded-circle" alt="Gilberto Gil">
+                <h3>Gilberto Gil</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="img/elismonte.jpg" class="img-fluid rounded-circle" alt="Elis Regina">
+                <h3>Elis Regina</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="my-5 text-center">
+        <h2>Galeria</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/show1.jpg" class="img-fluid rounded" alt="Show de MPB">
+            </div>
+            <div class="col-md-4">
+                <img src="img/show2.jpg" class="img-fluid rounded" alt="Músicos tocando">
+            </div>
+            <div class="col-md-4">
+                <img src="img/show3.jpg" class="img-fluid rounded" alt="Cantor de MPB se apresentando">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="my-5 text-center">
+        <h2>Entre em contato</h2>
+        <form class="mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" class="form-control" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea id="mensagem" class="form-control" rows="4" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+</main>
+
+<footer class="text-center p-3 bg-primary text-white">
+    <p>Siga-me nas redes sociais:</p>
+    <i class="bi bi-instagram"></i>
+    <p class="mt-3">Projeto fictício Feito Por Natalia Neves sem fins comerciais.</p>
+</footer>
+
+</body></html>
