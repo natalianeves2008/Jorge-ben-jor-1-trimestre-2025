@@ -1,5 +1,3 @@
-/* Variáveis de cores */ :root { --azul-escuro: #1E3A5F; --azul-claro: #3A6EA5; --dourado: #F4A261; --branco: #FFFFFF; --preto: #000000; }
-
 body { font-family: 'Montserrat', sans-serif; background-color: var(--azul-escuro); color: var(--branco); margin: 0; padding: 0; }
 
 header { background-color: var(--azul-claro); padding: 20px; text-align: center; }
