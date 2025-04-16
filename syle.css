@@ -1,27 +1,70 @@
-body { font-family: 'Montserrat', sans-serif; background-color: var(--azul-escuro); color: var(--branco); margin: 0; padding: 0; }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
 
-header { background-color: var(--azul-claro); padding: 20px; text-align: center; }
+header {
+    background-color: #007bff;
+    padding: 40px 0;
+}
 
-nav { display: flex; justify-content: center; gap: 20px; }
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
 
-.nav-link { color: var(--branco); text-decoration: none; font-weight: bold; }
+.nav-link {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
 
-.nav-link:hover { color: var(--dourado); }
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
 
-main { padding: 40px; text-align: center; }
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
 
-h1, h2 { color: var(--dourado); }
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#inicio img {
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#artistas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #007bff;
+}
+#galeria img {
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
 
-.galeria { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+footer p {
+    margin: 0;
+}
 
-.galeria img { width: 100%; border-radius: 10px; }
-
-form { max-width: 500px; margin: auto; background: var(--branco); padding: 20px; border-radius: 10px; }
-
-input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid var(--azul-claro); border-radius: 5px; }
-
-button { background-color: var(--dourado); border: none; padding: 10px 20px; color: var(--preto); font-weight: bold; cursor: pointer; border-radius: 5px; margin-top: 10px; }
-
-button:hover { background-color: var(--azul-claro); color: var(--branco); }
-
-footer { text-align: center; padding: 20px; background-color: var(--azul-claro); }
+footer i {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
